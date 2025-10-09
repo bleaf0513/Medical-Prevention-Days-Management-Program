@@ -1,0 +1,46 @@
+/* CSS variables for light and dark */
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --surface: #ffffff;
+  --primary: #1f6feb;
+  --card-shadow: 0 6px 20px rgba(16,24,40,0.06);
+}
+
+/* dark variables */
+[data-theme="dark"] {
+  --bg: #0b1220;
+  --text: #e6eef8;
+  --muted: #9aa6b2;
+  --surface: #0f1724;
+  --primary: #2bb4d9;
+  --card-shadow: 0 6px 20px rgba(2,6,23,0.6);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* cards, buttons etc */
+.card {
+  background: var(--surface);
+  box-shadow: var(--card-shadow);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+a {
+  color: var(--primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
